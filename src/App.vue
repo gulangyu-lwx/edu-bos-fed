@@ -1,5 +1,10 @@
+<script lang="ts" setup>
+import sectionOne from './views/my/sectionOne.vue'
+</script>
+
 <template>
-  <h1>拉钩教育</h1>
+  <h1>测试系统</h1>
+  <sectionOne></sectionOne>
   <router-view />
 </template>
 
