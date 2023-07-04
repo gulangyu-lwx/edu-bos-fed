@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import sectionTwo from './sectionTwo.vue'
 import { ref } from 'vue'
-const site = ref("搜索")
+const site = ref('上海')
 </script>
 
 <style scoped></style>
