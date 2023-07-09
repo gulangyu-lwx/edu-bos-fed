@@ -1,10 +1,9 @@
 <script lang="ts" setup>
-import sectionOne from './views/my/sectionOne.vue'
+import myFather from './views/my/myFather.vue'
 </script>
 
 <template>
-  <h1>测试系统</h1>
-  <sectionOne></sectionOne>
+  <myFather></myFather>
   <router-view />
 </template>
 
