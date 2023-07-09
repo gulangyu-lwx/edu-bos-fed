@@ -4,6 +4,7 @@
     <input type="text" :value="iptVal">
     <button @click="changeVal($parent)">使father+10, 使son-10</button>
     <p>-{{ note }}-</p>
+    <p>QQ信息：{{ }}</p>
     <hr>
     <mySonA ref="sonRef"></mySonA>
     <mySonB></mySonB>
@@ -14,21 +15,21 @@
 import { ref, onMounted } from "vue";
 import mySonA from "./mySonA.vue";
 import mySonB from "./mySonB.vue";
-import request from '../../services/request'
-
+import { GetWeather, GetGroupInfo } from "../../api/home";
 const iptVal = ref(10000)
 let note = ref('')
 const sonRef = ref()
-onMounted(() => {
-  request({
-    method: 'GET',
-    url: '/api/weather/GetWeather',
-  }).then(res => {
-    if (res.data.code == 200) {
-      note.value = res.data.result.city
-    }
-  })
+onMounted(async () => {
+  let res = await GetWeather();
+  if (res.data.code == 200) {
+    note.value = res.data.result.city
+  }
 })
+const getQQ = async () => {
+  let res = await GetGroupInfo(611987360)
+  console.log(res, 'res');
+}
+getQQ()
 const changeVal = ($parent: any) => {
   sonRef.value.iptVal -= 10;
   $parent.iptVal += 10
