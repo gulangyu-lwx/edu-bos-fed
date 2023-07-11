@@ -11,6 +11,9 @@ dependencies:
   core-js:
     specifier: ^3.8.3
     version: registry.npmmirror.com/core-js@3.8.3
+  md5:
+    specifier: ^2.3.0
+    version: registry.npmmirror.com/md5@2.3.0
   mitt:
     specifier: ^3.0.1
     version: registry.npmmirror.com/mitt@3.0.1
@@ -4014,6 +4017,12 @@ packages:
       supports-color: registry.npmmirror.com/supports-color@7.2.0
     dev: true
 
+  registry.npmmirror.com/charenc@0.0.2:
+    resolution: {integrity: sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/charenc/-/charenc-0.0.2.tgz}
+    name: charenc
+    version: 0.0.2
+    dev: false
+
   registry.npmmirror.com/chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/chokidar/-/chokidar-3.5.3.tgz}
     name: chokidar
@@ -4583,6 +4592,12 @@ packages:
       shebang-command: registry.npmmirror.com/shebang-command@2.0.0
       which: registry.npmmirror.com/which@2.0.2
     dev: true
+
+  registry.npmmirror.com/crypt@0.0.2:
+    resolution: {integrity: sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/crypt/-/crypt-0.0.2.tgz}
+    name: crypt
+    version: 0.0.2
+    dev: false
 
   registry.npmmirror.com/crypto-random-string@2.0.0:
     resolution: {integrity: sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz}
@@ -6654,6 +6669,12 @@ packages:
       has-tostringtag: registry.npmmirror.com/has-tostringtag@1.0.0
     dev: true
 
+  registry.npmmirror.com/is-buffer@1.1.6:
+    resolution: {integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-buffer/-/is-buffer-1.1.6.tgz}
+    name: is-buffer
+    version: 1.1.6
+    dev: false
+
   registry.npmmirror.com/is-callable@1.2.7:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-callable/-/is-callable-1.2.7.tgz}
     name: is-callable
@@ -7427,6 +7448,16 @@ packages:
     dependencies:
       semver: registry.npmmirror.com/semver@6.3.0
     dev: true
+
+  registry.npmmirror.com/md5@2.3.0:
+    resolution: {integrity: sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/md5/-/md5-2.3.0.tgz}
+    name: md5
+    version: 2.3.0
+    dependencies:
+      charenc: registry.npmmirror.com/charenc@0.0.2
+      crypt: registry.npmmirror.com/crypt@0.0.2
+      is-buffer: registry.npmmirror.com/is-buffer@1.1.6
+    dev: false
 
   registry.npmmirror.com/mdn-data@2.0.14:
     resolution: {integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mdn-data/-/mdn-data-2.0.14.tgz}
