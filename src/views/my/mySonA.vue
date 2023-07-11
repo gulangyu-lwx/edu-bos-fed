@@ -1,5 +1,4 @@
 
-
 <template>
   <div class="mySon">
     mySonA
@@ -12,15 +11,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import $bus from "../../bus/index";
-import useInfoStore from "../../store/modules/info";
+import { ref } from 'vue'
+import $bus from '../../bus/index'
+import useInfoStore from '../../store/modules/info'
 const iptVal = ref(10000)
 const changeVal = ($parent: any) => {
   $parent.iptVal -= 20
   $bus.emit('addTwo', 20)
 }
-let infoStore = useInfoStore()
+const infoStore = useInfoStore()
 const changePinia = () => {
   infoStore.updateVal()
 }

@@ -9,16 +9,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref, inject } from "vue";
-import $bus from "../../bus/index";
-import useInfoStore from "../../store/modules/info";
+import { ref, inject } from 'vue'
+import $bus from '../../bus/index'
+import useInfoStore from '../../store/modules/info'
 const iptVal = ref(10000)
 const changeVal = ($parent: any) => {
   $parent.iptVal -= 20
   $bus.emit('addTwo', 20)
 }
-console.log((inject('money') as any).value, '祖传孙');
-let infoStore = useInfoStore()
+console.log((inject('money') as any).value, '祖传孙')
+const infoStore = useInfoStore()
 defineExpose({
   iptVal
 })
