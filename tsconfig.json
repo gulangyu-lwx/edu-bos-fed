@@ -34,7 +34,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "src/utils/request.ts"
+    "src/utils/request_init.ts"
   ],
   "exclude": [
     "node_modules"

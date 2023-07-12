@@ -17,24 +17,22 @@ import { ref, onMounted } from 'vue'
 import mySonA from './mySonA.vue'
 import mySonB from './mySonB.vue'
 import { GetWeather, GetGroupInfo } from '@/api/home'
-console.log(GetWeather, 'GetWeather')
 const iptVal = ref(10000)
 const note = ref('')
 const qqMsg = ref('')
 const sonRef = ref()
 onMounted(async () => {
   const res = await GetWeather()
-  console.log(res, '1')
-  // if (res.data.code === 200) {
-  //   note.value = res.data.result.city
-  // }
+  if (res.data.code === 200) {
+    note.value = res.data.result.city
+  }
+  console.log(res, '888')
 })
 const getQQ = async () => {
   const res = await GetGroupInfo(611987360)
-  console.log(res, '2')
-  // if (res.data.code === 200) {
-  //   qqMsg.value = res.data.result.gName
-  // }
+  if (res.data.code === 200) {
+    qqMsg.value = res.data.result.gName
+  }
 }
 const changeVal = ($parent: any) => {
   sonRef.value.iptVal -= 10

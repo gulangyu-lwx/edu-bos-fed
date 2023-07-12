@@ -5,11 +5,11 @@ module.exports = defineConfig({
     host: 'localhost', // 设置主机名
     proxy: {
       '^/api': {
-        target: process.env.VUE_APP_BASE_URL,
+        target: process.env.VUE_APP_BASE_URL, // 这个上线时需要配置什么
         changeOrigin: true
       }
     }
   },
   transpileDependencies: true,
-  lintOnSave: false
+  lintOnSave: true
 })

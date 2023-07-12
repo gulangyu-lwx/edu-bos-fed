@@ -1,5 +1,5 @@
-import { defineStore } from "pinia";
-import { ref } from "vue";
+import { defineStore } from 'pinia'
+import { ref } from 'vue'
 // let useInfoStore = defineStore('info', {
 //   state: () => {
 //     return {
@@ -15,9 +15,9 @@ import { ref } from "vue";
 //   getters: {}
 // })
 //  vue3 写法
-let useInfoStore = defineStore('todo', () => {
-  let count = ref(10000)
-  let updateVal = () => {
+const useInfoStore = defineStore('todo', () => {
+  const count = ref(10000)
+  const updateVal = () => {
     count.value += 100
   }
   return {

@@ -13,6 +13,6 @@
 //   }
 // })
 
-import { createPinia } from 'pinia';
-let store = createPinia()
+import { createPinia } from 'pinia'
+const store = createPinia()
 export default store
